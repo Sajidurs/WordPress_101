@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hello Dolly</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="<?php bloginfo( 'charset' );?>">
+    <?php wp_head();?>
 </head>
 <body>
 <div class="header">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="tagline">No act of kindness, no matter how small, is ever wasted</h3>
-                <h1 class="align-self-center display-1 text-center heading">Hello Beautiful</h1>
+                <h3 class="tagline">
+                    <?php echo bloginfo( "description" );?>
+                </h3>
+                <h1 class="align-self-center display-1 text-center heading">
+                    <?php echo bloginfo( "name" );?>
+                </h1>
             </div>
         </div>
     </div>
@@ -140,5 +143,6 @@
         </div>
     </div>
 </div>
+<?php wp_footer();?>
 </body>
 </html>
