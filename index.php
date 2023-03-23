@@ -36,10 +36,9 @@
                 <div class="col-md-4">
                     <p>
                         <strong><?php the_author();?></strong><br/>
-                        <?php the_date();?>
+                        <?php get_the_date();?>
                     </p>
                     <ul class="list-unstyled">
-                        <li>dhaka</li>
                     </ul>
                 </div>
                 <div class="col-md-8">
