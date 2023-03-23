@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' );?>">
     <?php wp_head();?>
 </head>
-<body>
+<body <?php body_class();?>>
 <div class="header">
     <div class="container">
         <div class="row">
@@ -20,7 +20,7 @@
     </div>
 </div>
 <div class="posts">
-    <div class="post">
+    <div class="post" <?php post_class();?>>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
