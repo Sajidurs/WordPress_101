@@ -44,8 +44,12 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        <img class="img-fluid" src="https://images.pexels.com/photos/301929/pexels-photo-301929.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=800"
-                             alt="Post Title">
+                        <?php
+                        if(has_post_thumbnail()){
+                            the_post_thumbnail("thumbnail", array("class='img-fluid'"));
+                        }
+
+                         ?>
                     </p>
                    <?php the_content();?>
                 </div>
@@ -57,7 +61,6 @@
     wp_reset_postdata();
     } ?>
 
-    
 
     
 </div>
