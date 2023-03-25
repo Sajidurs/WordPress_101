@@ -48,6 +48,11 @@ endif; // wp101_setup
 add_action( "after_setup_theme", "wp101_setup" );
 
 
+function wp_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'wp_custom_excerpt_length', 999 );
+
 
 
 function enqueuing_files(){
