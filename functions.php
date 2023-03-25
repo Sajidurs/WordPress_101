@@ -29,8 +29,12 @@ if ( ! function_exists( 'wp101_setup' ) ) :
         add_theme_support( 'title-tag' );
         /** custom background **/
 
+		register_nav_menus( array(
+			'primary'   => __( 'Primary Menu', '101' )
+		) );
+
         $bg_defaults = array(
-            'default-image' => '',
+        'default-image' => '',
         'default-preset' => 'default',
         'default-size' => 'cover',
         'default-repeat' => 'no-repeat',

@@ -19,6 +19,15 @@
         </div>
     </div>
 </div>
+
+
+    <div class="container">
+        <div class="row">
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        </div>
+    </div>
+
+
 <div class="posts">
     <?php
 
@@ -50,7 +59,7 @@
 
                          ?>
                     </p>
-                   <?php the_content();?>
+                   <?php the_excerpt();?>
                 </div>
             </div>
 
